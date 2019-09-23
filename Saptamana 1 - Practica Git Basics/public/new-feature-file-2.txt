@@ -3,4 +3,9 @@ A branch (UK: /'br??nt?/ or UK: /'brænt?/, US: /'brænt?/) or tree branch (someti
 
 Commit : verb (used with object), com·mit·ted, com·mit·ting.
 to give in trust or charge; consign.
+<<<<<<< Updated upstream
 to consign for preservation:
+=======
+to consign for preservation:++++
+am mai modificat ceva
+>>>>>>> Stashed changes
