@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular2</title>
+    </head>
+    <body>
+        <div>
+            <h1>
+                Travel reservation form
+            </h1>
+            <h3>
+                * denotes mandantory
+            </h3>
+        </div>
+        <form>
+            <div>
+                Full name*:<br>
+                <input type="text" name="fullname" placeholder="FirstName LastName">
+            </div>
+            <div>
+                Email adress*:<br>
+                <input type="email" name="email" placeholder="E-MAIL ADRESS">
+            </div>
+            <div>
+                Select Tour package*:<br>
+                <select name="tour package" >
+                    <option value="Goa">Goa</option>
+                    <option value="Roa">Roa</option>
+                    <option value="Boa">Boa</option>
+                </select>
+            </div>
+            <div>
+                Arival date*:<br>
+                <input type="date" name="arrivaldate" placeholder="Arrival date" max="2020/12/31">
+            </div>
+            <div>
+                Number of person*:<br>
+                <input type="unknown" name="nrofperson" placeholder="UNKNOWN_TYPE">   
+            </div>
+            <div>
+            What would you want to avail?*<br>
+            <input type="checkbox" name="opt1" value="boarding">Boarding<br>
+            <input type="checkbox" name="opt2" value="fooding">Fooding<br>
+            <input type="checkbox" name="opt3" value="sightseeing">Sight seeing<br>
+            </div>
+            <div>
+                Discount Coupon code:<br>
+                <input type="unknown" name="code" placeholder="UNKNOWN_TYPE">
+            </div>
+            <div>
+                Terms and conditions*:<br>
+                <input type="radio" name="agree" value="agree">I agree
+                <input type="radio" name="disagree" value= disagree> I disagree<br>
+            </div>
+            <div>
+                <input type="submit" value="Complete reservation">
+            </div>
+        </form>
+    </body>
+</html>

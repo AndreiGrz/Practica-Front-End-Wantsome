@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular3</title>
+    </head>
+
+
+    <body>
+        <form>
+            <div>
+            Search for:<br>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+        </div>
+        <div>
+            Match:
+            <input type="radio" name="op1" value="anyWord">Any word
+            <input type="radio" name="op2" value="alLwords" checked>All words
+            <input type="radio" name="op3" value="exactPhrase"> Exact phrase
+        </div>
+        <div>
+            <input type="checkbox" name="check" value="soundalikematching">Sound-alike matching
+        </div>
+        <div>
+            <!--I know smth it's wrong in this div, but I tried-->
+            Dated:
+            <input type="radio" name=opt1>
+            <input type="date" name="data" value="YYYY-MM-DD" placeholder="Within the last year">
+            <br><input type="radio" name=opt2> From
+            <input type="month" name="selmonth">
+            <input type="number" min="1" max ="12">,
+            <input type="number" min="0" max="10000000" name="an">
+            <br> To
+            <input type="month" name="selmonth">
+            <input type="number" min="1" max ="12">,
+            <input type="number" min="0" max="10000000" name="an">
+
+        </div>
+        <div>
+            Within:
+            <select name="within">
+                <option value="Description">Description</option>
+            </select>
+        </div>
+        <div>
+            Show:
+            <input type="number" max=10 name="results"> results
+            <select name="with">
+                <option value="with">with</option>
+                <option value="without">without</option> 
+            </select> summaries
+        </div>
+        <div>
+            Sort by:
+            <select name="sort">
+                <option value="relevance">relevance</option>
+                <option value="irelevance">irelevance</option>
+            </select>
+        </div>
+
+
+        </form>
+    </body>
+</html>

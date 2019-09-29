@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular</title>
+    </head>
+    <body>
+        <h3 > <font color="red">&#128521Completati urmatorul formular:</font></h3>
+            <form id="formular">
+                <div>
+                Nume*: <input type="text" name="name" requered><br><br>
+                Prenume*: <input type="text" name="prenume" requered><br>
+                </div>
+                <div>
+                    Sex:<br>
+                    <input type="radio" name="gender" value="male">Masculin<br>
+                    <input type="radio" name="gender" value="female">Feminin<br>
+                    <input type="radio" name="gender" value="other">Altul
+                </div><br>
+                <div>
+                    Varsta:
+                    <input type="number" min="18" max="35" name="age">
+                </div><br>
+                <div>
+                    Tara:<select>
+                            <option value="countryname" selected="selected">Country Name</option>
+                            <option value="Romania">Romania</option>
+                            </select>
+                </div><br>
+                <div>
+                    Oras:
+                    <input type="text" name="oras">
+                </div><br>
+                <div>
+                    Adresa:
+                    <textarea name="text" rows="2" cols="20" placeholder="Introduceti adresa"></textarea>
+                </div><br>
+                <div>
+                    Cod postal:
+                    <input type="number" min="0" max="10000000" name="zip">
+                </div><br>
+                <div>
+                    E-mail*: <input type="email" name="email" requered><br>
+                </div><br>
+                <div>
+                    Mesaj:
+                    <textarea name="text" rows="5" cols="20" placeholder="Lasati un mesaj"></textarea>
+                </div><br>
+                <div>
+                    Atasati CV-ul:
+                    <input type="file" name="cvname">
+                </div><br>
+                <div>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </div>
+
+
+            </form>
+
+    </body>
+</html>

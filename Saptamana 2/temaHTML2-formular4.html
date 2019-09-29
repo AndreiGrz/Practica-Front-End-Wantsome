@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular4</title>
+    </head>
+    <body>
+        <h1>My feedback form</h1>
+        <ul>
+            <li>
+                Name:
+                <input type="text" name="name">
+            </li>
+            <li>
+                Email:
+                <input type="email" name="mail">
+            </li>
+            <li>
+                Password:
+                <input type="password" name="parola">
+            </li>
+            <br>
+            <li>
+                Please check all the emotions that apply to you:
+                <ul >
+                    <li>
+                        Angry<input type="checkbox" name="opt1" value="angry"><br>
+                    </li>
+                        <li>
+                            Sad<input type="checkbox" name="opt2" value="sad"><br>
+                        </li>
+                        <li>
+                        Happy<input type="checkbox" name="opt3" value="happy"><br>
+                        </li>
+                        <li>
+                        Ambivalent<input type="checkbox" name="opt4" value="ambivalent"><br>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                How satisfied were you with our service?
+                <ul>
+                    <li>
+                        Very satisfied<input type="radio" name="op1" value="verySatisfied">
+                    </li>
+                    <li>
+                        Satisfied<input type="radio" name="op2" value="satisfied">
+                    </li>
+                    <li>
+                        Didn't care<input type="radio" name="op3" value="dontcare">
+                    </li>
+                    <li>
+                        Dissatisfied<input type="radio" name="op4" value="diss">
+                    </li>
+                    <li>
+                        Very dissatisfied<input type="radio" name="op5" value="verydiss">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Futher comments: <textarea name="text" rows="2" cols="20"></textarea>
+            </li>
+            <li>
+                Bio photo: 
+                <input type="text" name="photoName">
+                <input type="file" name="myFile">
+            </li>
+            <li>
+                Location visited:
+                <select name="Select location" aria-placeholder="Select location" >
+                    <option value="firstPlace">First Place</option>
+                </select>
+            </li>
+        </ul>
+    <li>
+    <input type="submit" name="Submit">
+    </li>
+    </body>
+</html>
