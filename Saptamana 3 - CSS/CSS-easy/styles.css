@@ -1,0 +1,27 @@
+.background{
+    font-family:  cursive;
+}
+.redlist a[href]{
+    color:red;
+   
+}
+#borders{
+    border: 1px solid black;
+}
+#borders a[href]{
+    color:green;
+}
+#borders1{
+    border:1px solid black;
+}
+#borders1 a[href]{
+   
+    color: #C55;
+}
+#img{
+    width: 150px;
+    height: 150px;
+}
+#font{
+    font-family: 'Trebuchet MS', sans-serif;
+}
