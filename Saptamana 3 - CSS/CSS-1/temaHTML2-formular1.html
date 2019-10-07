@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formular</title>
+        <link rel="stylesheet" href="formstyle1.css">
+    </head>
+    <body>
+        <h3 > &#128521Completati urmatorul formular:</h3>
+            <form id="formular">
+                <div class="name">
+                Nume*: <input type="text" name="name" requered><br><br>
+                Prenume*: <input type="text" name="prenume" requered><br>
+                </div>
+                <div class="gender">
+                    Sex:<br>
+                    <input type="radio" name="gender" value="male">Masculin<br>
+                    <input type="radio" name="gender" value="female">Feminin<br>
+                    <input type="radio" name="gender" value="other">Altul
+                </div><br>
+                <div class="age">
+                    Varsta:
+                    <input type="number" min="18" max="35" name="age">
+                </div><br>
+                <div class="country">
+                    Tara:<select>
+                            <option  id="cn" value="countryname" selected="selected">Country Name</option>
+                            <option value="Romania">Romania</option>
+                            </select>
+                </div><br>
+                <div class="town">
+                    Oras:
+                    <input type="text" name="oras">
+                </div><br>
+                <div class="adress">
+                    Adresa:
+                    <textarea name="text" rows="2" cols="20" placeholder="Introduceti adresa"></textarea>
+                </div><br>
+                <div class="zip">
+                    Cod postal:
+                    <input type="number" min="0" max="10000000" name="zip">
+                </div><br>
+                <div class="mail">
+                    E-mail*: <input type="email" name="email" requered><br>
+                </div><br>
+                <div class="msg">
+                    Mesaj:
+                    <textarea name="text" rows="5" cols="20" placeholder="Lasati un mesaj"></textarea>
+                </div><br>
+                <div class="cv">
+                    Atasati CV-ul:
+                    <input type="file" name="cvname">
+                </div><br>
+                <div class="button">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </div>
+
+
+            </form>
+
+    </body>
+</html>
