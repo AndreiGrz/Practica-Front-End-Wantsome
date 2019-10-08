@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body{
+    /* background-color: rgb(172, 184, 197); */
+    background-image: url("wall.jpg");
+}
+.container{
+    width:350px;
+    margin:auto;
+    /* background: #034F84; */
+    background: rgba(0, 0, 0, 0.5);
+    margin-top:30px;
+    padding:5px;
+}
+
+form{
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    border:2px solid #DCDCDC;
+    margin:10px;
+
+}
+
+h2{
+    background: rgba(145, 142, 142, 0.432);
+    border-radius:10px;
+    border:1px solid rgba(0, 0, 0, 0.562);
+    padding:5px;
+    text-align: center;
+    font-size:40px;
+    color: black;
+    -webkit-text-fill-color: #DCDCDC;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+input{
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+    border:none;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=password]{
+    width:90%;
+    /* background:transparent;
+    border-bottom:2px solid black; */
+}
+input[type=submit]{
+    width:50%;
+    margin-left: 25%;
+    background: rgba(145, 142, 142, 0.432); 
+    border:2px solid rgba(0, 0, 0, 0.486);
+    font-size:15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.486);
+}
+input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+select{
+    padding:8px;
+    margin-left:5px;
+    margin-top:3px;
+    width:30%;
+    border:none;
+    border-radius:5px;
+}
