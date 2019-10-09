@@ -1,0 +1,57 @@
+li:nth-child(even){
+    color:green;
+   
+}
+li:nth-child(2){
+    list-style-type:none;
+}
+li:nth-child(3)
+{
+    background-color: aqua;
+    display: inline-block;
+}
+li:nth-child(5) a[href]{
+    color:red;
+    
+}
+li:nth-child(5):hover a[href]{color: grey;}
+li:nth-child(5){
+    list-style-type:none;
+}
+
+li:nth-child(3) a[href]{
+    color: red;
+}
+li:first-child{
+   border-top:1px solid green;
+   display: inline;
+  
+}
+li:last-child{
+    border-bottom: 5px solid ;
+    border-bottom: dashed blue;
+    display: inline;
+    
+}
+
+input:focus[type=text]{
+        background-color:grey;
+        color: green ;
+        
+}
+input:focus[placeholder="last name"]{
+    background-color: grey;
+    color:blue;
+}
+
+input:focus[type="password"]{
+    color:transparent;
+}
+input[type="email"]::selection{
+    background-color:yellow;
+    color:rgb(233, 135, 152);
+}
+input:hover[type="submit"]{
+    color:red;
+
+}

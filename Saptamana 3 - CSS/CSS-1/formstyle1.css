@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(173, 164, 204);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-style: solid;
+}
+
+h3{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(41, 41, 163);
+    color: rgb(122, 141, 184);
+    font-family: sans-serif;
+    width:400px;
+    margin:0px 0px 0px 450px;
+    border:10px solid rgb(10, 10, 83);
+    padding:10px;
+    border-radius: 10px;
+    
+}
+.name{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:5px 0px 0px 450px;
+    border:1px solid black;
+    border-bottom:none;
+    border-radius: 10px;
+
+}
+.name input[type=text]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.gender{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:5px 0px 0px 450px;
+    border:1px solid black;
+    border-top:none;
+    border-bottom:none;
+    border-radius: 10px;
+
+}
+.age{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:-15px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+}
+.age input[type=number]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.country{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;   
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+#cn{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.town{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+}
+.town input[type=text]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.adress{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+.adress textarea[name=text]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.zip{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+.zip input[type=number]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.mail{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+.mail input[type=email]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.msg{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+.msg textarea[name=text]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+
+}
+.cv{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-radius: 10px;
+
+}
+.cv input[type=file]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+}
+.button{
+    background-color: rgb(41, 41, 163);
+    width:438px;
+    margin:0px 0px 0px 450px;
+    border:1px solid black;
+    border-top:none;
+    border-radius: 10px;
+}
+.button input[type=reset]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+    margin-left:250px;
+}
+.button input[type=submit]{
+    background-color: blueviolet;
+    border:2px solid rgb(71, 13, 85);
+    border-radius:5px;
+    color:whitesmoke;
+    margin-left:50px
+    
+}
