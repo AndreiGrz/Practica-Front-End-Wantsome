@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+body{
+    font-family: 'Poiret One', cursive;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.calc-btn{
+    background-color: #bdc3c7;
+    color:black;
+    width: 25px;
+    height: 45px;
+    border: 1px solid #536976;
+    text-align: center;
+    cursor: pointer;
+    font-size:30px;
+    font-weight: 100; 
+    padding-top:3px;
+}
+.calc-btn:hover{
+    background-color:#FFC837;
+
+}
+.row{
+    display:table;
+    table-layout: fixed;
+    width: 200px;
+
+}
+.column{
+    display: table-cell;
+}
+#calc-zero{
+    width:52.66666667px;
+    border-radius: 0 0 0 7px;
+}
+#calc-clear{
+    width:52.66666667px;
+}
+#calc-display-val{
+    height:60px;
+    color:#D3CCE3;
+    text-align:right;
+    border-left:1px solid #536976;
+    border-top:1px solid #536976;
+    border-right: 1px solid #536976;
+    font-size:48px;
+    background-color:#536976;
+    overflow: hidden;
+    white-space: nowrap;
+    padding:10px;
+    border-radius: 7px 7px 0 0;
+
+}
+.calc-btn-operator{
+    background-color:#FFC837;
+    color:#D3CCE3;
+}
+h1{
+    text-align:center;
+    margin-top:50px;
+    color:#bdc3c7;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#calc-equals{
+    border-radius: 0 0 7px 0;
+
+}
+#calc-parent{
+    margin-left:calc(50% - 100px);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
+}
+
