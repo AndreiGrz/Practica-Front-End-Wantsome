@@ -3,17 +3,14 @@
 
 function getGender(cnp){
     var firstchar = cnp.toString()[0];
-    if(firstchar === '1')
-    {
+    if(firstchar === '1'){
         return "Persoana verificata este de sexul masculin !";
     }
     else 
-    if(firstchar === '2')
-    {
+    if(firstchar === '2'){
         return "Persoana verificata este de sexul feminin !";
     }
-    else
-    {
+    else{
         return "Nu se poate verifica sexul persoanei !";
     }
 }
@@ -40,9 +37,7 @@ Pasul 5: Apelez functia
 Functia va returna un text de forma "Calificatul corespunzator punctajului [punctaj] este [calificativ]".*/
 
 var note = function (points) {
-
-    if(typeof points !== 'number')
-    {
+    if(typeof points !== 'number'){
         return "Punctaj eronat !";
     }
 
@@ -69,11 +64,9 @@ var note = function (points) {
             return "Punctajul obtinut nu are echivalent in calificativ."
             break;   
     }
-
     return "Calificativul corespunzator punctajului " + points + " este " + equal + ".";
 
 };
-
 var evaluation = console.log(note(10));
 
 /*=========PSEUDOCOD==========
@@ -98,28 +91,23 @@ Una dintre implementari trebuie sa fie bazata pe Object Literals ( read:  https:
 function getMark1 (type) {
     var country ='';
 
-    if (type === 'Mercedes') 
-    {
+    if (type === 'Mercedes') {
       country = 'Germania';
     } 
     else 
-    if (type === 'Volvo') 
-    {
+    if (type === 'Volvo') {
       country = 'Suedia';
     } 
     else 
-    if (type === 'Dacia') 
-    {
+    if (type === 'Dacia') {
       country = 'Romania';
     } 
-    else 
-    {
+    else {
         return 'Nu avem date despre marca '+type;
     }
 
     return "Marca " + type + " se produce in " + country +' .';
   }
-
   console.log(getMark1('Lada'));
   /*
   Pasul 1: Declar o variabila care imi va stoca tara de provenienta a marcii masinii
@@ -146,7 +134,6 @@ function getMark1 (type) {
               countru = 'Not found';
           }
       };
-
       (car[type] || car['default'])();
 
       return 'Marca ' + type + ' se produce in ' + country +'.';
@@ -155,6 +142,7 @@ console.log(getMark2('Mercedes'));
 
 var typeOfCar = function (type) {
     var country = '';
+    
     switch(true)
     {
         case type === 'Mercedes':
@@ -169,7 +157,6 @@ var typeOfCar = function (type) {
         default:
             country = 'Unknown country';
     }
-
     return 'Marca ' + type + ' se produce in ' + country +'.'; 
 };
 var infoAbout = console.log(typeOfCar('Volvo'));
@@ -184,17 +171,18 @@ var cars = [
 ];
 - afiseaza in consola array-ul sortat*/
 
- var cars = [
+(function () {
+    var cars = [
         {name: "John",  salary: 20000 },
         { name: "Danny", salary: 30500 },
         { name: "Bekker", salary: 15000 }
       ];
-function compareElemnts(a,b){
-    if(a.salary > b.salary)
-        return a.salary - b.salary;
-}
 
-console.log(cars.sort(compareElemnts));
+    cars.sort(function (a, b) {
+        return a.salary - b.salary;
+    });
+    console.log(cars);
+})();
 
 /*======PSEUDOCOD===========
 Pasul 1: Daca a si b sunt doua elemente ce trebuie comparate
