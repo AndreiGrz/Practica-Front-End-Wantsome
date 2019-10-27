@@ -3,12 +3,12 @@
 
 function getGender(cnp){
     var firstchar = cnp.toString()[0];
-    if(firstchar === 1)
+    if(firstchar === '1')
     {
         return "Persoana verificata este de sexul masculin !";
     }
     else 
-    if(firstchar === 2)
+    if(firstchar === '2')
     {
         return "Persoana verificata este de sexul feminin !";
     }
