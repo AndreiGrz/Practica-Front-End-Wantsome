@@ -3,11 +3,14 @@
 
 function getGender(cnp){
     var firstchar = cnp.toString()[0];
-    if(firstchar == 1){
+    if(firstchar === '1'){
         return "Persoana verificata este de sexul masculin !";
-    }else if(firstchar == 2){
+    }
+    else 
+    if(firstchar === '2'){
         return "Persoana verificata este de sexul feminin !";
-    }else{
+    }
+    else{
         return "Nu se poate verifica sexul persoanei !";
     }
 }
@@ -25,26 +28,6 @@ Pasul 5: Apelez functia
 */
 
 
-// function gender(cnp){
-//     if(typeof cnp !== 'number'){
-//         return "CNP-ul nu contine doar caractere numerice!";
-//     }
-//     if(cnp.length !== 13){
-//         return "CNP invalid !";
-//     }
-//     switch(true){
-//         case cnp.charAt(0) === 1:
-//             return "Persoana verificata este de sexul masculin !";
-//             break;
-//         case cnp.charAt(0) === 2:
-//             return "Persoana verificata ese de sexul feminin !";
-//             break;
-//         default:
-//             return "Nu se poate identifica sexul persoanei!";
-//     }
-// }
-// console.log(gender(1960702225926));
-
 /*Ex2 -2. Scrieti o functie sub forma function expression care accepta ca argument o valoare numerica cuprinsa intre 1 si 10 si decide calificativul punctajului. Criteriile sunt urmatoarele:
 - 1-3 = E
 - 3-6 = D
@@ -57,8 +40,11 @@ var note = function (points) {
     if(typeof points !== 'number'){
         return "Punctaj eronat !";
     }
-    var equal ;
-    switch(true){
+
+    var equal;
+
+    switch(true)
+    {
         case points <= 3 && points >= 1:
           equal = 'E';
           break;
@@ -79,6 +65,7 @@ var note = function (points) {
             break;   
     }
     return "Calificativul corespunzator punctajului " + points + " este " + equal + ".";
+
 };
 var evaluation = console.log(note(10));
 
@@ -103,15 +90,22 @@ Una dintre implementari trebuie sa fie bazata pe Object Literals ( read:  https:
 
 function getMark1 (type) {
     var country ='';
+
     if (type === 'Mercedes') {
       country = 'Germania';
-    } else if (type === 'Volvo') {
+    } 
+    else 
+    if (type === 'Volvo') {
       country = 'Suedia';
-    } else if (type === 'Dacia') {
+    } 
+    else 
+    if (type === 'Dacia') {
       country = 'Romania';
-    } else {
+    } 
+    else {
         return 'Nu avem date despre marca '+type;
     }
+
     return "Marca " + type + " se produce in " + country +' .';
   }
   console.log(getMark1('Lada'));
@@ -125,6 +119,7 @@ function getMark1 (type) {
 
   function getMark2 (type) {
       var country = '';
+      
       var car ={
           'Mercedes': function (){
             country = 'Germania';
@@ -134,16 +129,22 @@ function getMark1 (type) {
           },
           'Dacia': function (){
               country = 'Romania';  
+          },
+          'default': function (){
+              countru = 'Not found';
           }
       };
-      (car[type])();
+      (car[type] || car['default'])();
+
       return 'Marca ' + type + ' se produce in ' + country +'.';
   }
 console.log(getMark2('Mercedes'));
 
 var typeOfCar = function (type) {
     var country = '';
-    switch(true){
+    
+    switch(true)
+    {
         case type === 'Mercedes':
             country = 'Germania';
             break;
@@ -154,7 +155,7 @@ var typeOfCar = function (type) {
             country = 'Romania';
             break;
         default:
-            //return 'Nu avem date despre marca ' +type;
+            country = 'Unknown country';
     }
     return 'Marca ' + type + ' se produce in ' + country +'.'; 
 };
@@ -169,29 +170,20 @@ var cars = [
   { name: "Bekker", salary: 15000 }
 ];
 - afiseaza in consola array-ul sortat*/
-// function sortArray(cars){
-//     var cars = [
-//         {name: "John",  salary: 20000 },
-//         { name: "Danny", salary: 30500 },
-//         { name: "Bekker", salary: 15000 }
-//       ];
-//       cars.sort((a,b) =>
-//       {return  (a.salary > b.salary) ? 1 : -1})
-// }
-// console.log(sortArray(cars));
 
- var cars = [
+(function () {
+    var cars = [
         {name: "John",  salary: 20000 },
         { name: "Danny", salary: 30500 },
         { name: "Bekker", salary: 15000 }
       ];
-function compareElemnts(a,b){
-    if(a.salary > b.salary)
-        return 1;
-    else
-        return -1;
-}
-console.log(cars.sort(compareElemnts));
+
+    cars.sort(function (a, b) {
+        return a.salary - b.salary;
+    });
+    console.log(cars);
+})();
+
 /*======PSEUDOCOD===========
 Pasul 1: Daca a si b sunt doua elemente ce trebuie comparate
 Pasul 2: Atribui lui a si b proprietatea salary a obiectului cars
